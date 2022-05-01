@@ -2,11 +2,52 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Estacionamento Lava Jato</title>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <!-- Logotipo -->
+    <img src="./assets/logo.svg" alt="Logotipo" />
+
+    <!-- Título da página -->
+    <h1>Estacionamento do lava jato</h1>
+
+    <div class="box">
+      <!-- -->
+      <div class="input-container">
+        <input type="text" placeholder="Veículo" id="input-veiculo" />
+        <input type="text" placeholder="Placa" id="input-placa" />
+        <input type="text" placeholder="Dono" id="input-dono" />
+      </div>
+
+      <!-- Botão adicionar carro -->
+      <button class="botao-guardar" onclick="adicionarCarro()">
+        <i class="fa-solid fa-car"></i>
+        Guardar veiculo
+      </button>
+
+      <hr />
+    </div>
+
+    <div class="carro-container">
+      <!-- Subtitulo Veiculos estacionados -->
+      <h2>Veículos estacionados</h2>
+
+      <!--Lista de carros-->
+      <ul></ul>
+    </div>
+
+    <!--Linkando javascript-->
+    <script src="./script.js"></script>
   </body>
 </html>
